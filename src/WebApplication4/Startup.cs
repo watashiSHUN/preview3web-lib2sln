@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ClassLibrary1;
 
 namespace WebApplication4
 {
@@ -36,6 +37,7 @@ namespace WebApplication4
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+            Class1.shun();
 
             if (env.IsDevelopment())
             {
